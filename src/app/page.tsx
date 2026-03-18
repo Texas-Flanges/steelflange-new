@@ -41,6 +41,11 @@ export default function Home() {
                 contactType: "sales",
                 email: "sales@texasflange.com",
               },
+              parentOrganization: {
+                "@type": "Organization",
+                name: "Texas Flange & Fitting Supply",
+                url: "https://texasflange.com",
+              },
             },
             {
               "@context": "https://schema.org",
@@ -132,7 +137,7 @@ export default function Home() {
               Blog
             </a>
             <a
-              href="https://texasflange.com/contact-us/"
+              href="https://texasflange.com/contact-us/?ref=steelflange"
               className="bg-white text-gray-900 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
             >
               Get a Quote
@@ -165,7 +170,7 @@ export default function Home() {
             high-quality flanges from an industry leader, we proudly direct you to our
             partners at{" "}
             <a
-              href="https://texasflange.com"
+              href="https://texasflange.com?ref=steelflange"
               className="text-white underline font-semibold hover:text-gray-100"
             >
               Texas Flange
@@ -200,7 +205,7 @@ export default function Home() {
             <p className="mt-4">
               An expert team is available at{" "}
               <a
-                href="https://texasflange.com"
+                href="https://texasflange.com?ref=steelflange"
                 className="text-blue-700 underline font-semibold"
               >
                 Texas Flange
@@ -356,7 +361,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://texasflange.com/contact-us/"
+              href="https://texasflange.com/contact-us/?ref=steelflange"
               className="bg-white text-gray-900 px-8 py-3 rounded font-bold text-lg hover:bg-gray-100 transition"
             >
               Get a Quote
@@ -432,7 +437,7 @@ export default function Home() {
             <p className="mt-1">
               A resource by{" "}
               <a
-                href="https://texasflange.com"
+                href="https://texasflange.com?ref=steelflange"
                 className="text-white hover:underline"
               >
                 Texas Flange

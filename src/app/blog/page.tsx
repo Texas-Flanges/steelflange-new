@@ -7,9 +7,35 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://steelflange.com/blog" },
 };
 
+const blogBreadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://steelflange.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Blog",
+      item: "https://steelflange.com/blog",
+    },
+  ],
+};
+
 export default function BlogPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogBreadcrumbs),
+        }}
+      />
+
       <style
         dangerouslySetInnerHTML={{
           __html: `
@@ -41,7 +67,7 @@ export default function BlogPage() {
               Blog
             </a>
             <a
-              href="https://texasflange.com/contact-us/"
+              href="https://texasflange.com/contact-us/?ref=steelflange"
               className="bg-white text-gray-900 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
             >
               Get a Quote
@@ -100,7 +126,7 @@ export default function BlogPage() {
             <p className="mt-1">
               A resource by{" "}
               <a
-                href="https://texasflange.com"
+                href="https://texasflange.com?ref=steelflange"
                 className="text-white hover:underline"
               >
                 Texas Flange

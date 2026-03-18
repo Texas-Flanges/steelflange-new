@@ -1,13 +1,37 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services | Steel Flange Pro',
-  description: 'Explore our range of services and products for professional steel.',
+  title: 'Services | Steel Flange',
+  description: 'Explore our range of services and products for steel flanges.',
+  alternates: { canonical: "https://steelflange.com/services" },
 };
 
 export default function ServicesPage() {
   return (
     <div className="w-full">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://steelflange.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Services",
+                item: "https://steelflange.com/services",
+              },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
         <div className="container-wide">
           <h1 className="text-4xl font-bold">Our Services</h1>
@@ -65,7 +89,7 @@ export default function ServicesPage() {
             <h3 className="text-2xl font-bold mb-4">Rush Order Fulfillment</h3>
             <p className="text-lg">
               Need it fast? We offer expedited manufacturing and shipping options to keep your projects on schedule.
-              Call us at <a href="tel:+1-281-484-8325" className="text-blue-600 hover:text-blue-800">281-484-8325</a> to discuss your timeline.
+              Call us at <a href="tel:281-484-8325" className="text-blue-600 hover:text-blue-800">281-484-8325</a> to discuss your timeline.
             </p>
           </div>
         </div>

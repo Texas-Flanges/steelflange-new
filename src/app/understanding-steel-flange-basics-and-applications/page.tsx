@@ -31,19 +31,45 @@ export default function ArticlePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: "Understanding Steel Flange: Basics and Applications",
-            datePublished: "2024-05-08",
-            description:
-              "Dive into the essentials of the steel flange, from types to materials, with clear, easy-to-follow explanations for beginners.",
-            publisher: {
-              "@type": "Organization",
-              name: "Steel Flange",
-              url: "https://steelflange.com",
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: "Understanding Steel Flange: Basics and Applications",
+              datePublished: "2024-05-08",
+              description:
+                "Dive into the essentials of the steel flange, from types to materials, with clear, easy-to-follow explanations for beginners.",
+              publisher: {
+                "@type": "Organization",
+                name: "Steel Flange",
+                url: "https://steelflange.com",
+              },
             },
-          }),
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://steelflange.com",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Blog",
+                  item: "https://steelflange.com/blog",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Understanding Steel Flange: Basics and Applications",
+                  item: "https://steelflange.com/understanding-steel-flange-basics-and-applications",
+                },
+              ],
+            },
+          ]),
         }}
       />
 
@@ -78,7 +104,7 @@ export default function ArticlePage() {
               Blog
             </a>
             <a
-              href="https://texasflange.com/contact-us/"
+              href="https://texasflange.com/contact-us/?ref=steelflange"
               className="bg-white text-gray-900 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
             >
               Get a Quote
@@ -232,7 +258,7 @@ export default function ArticlePage() {
             of industrial flange and fittings, from standard carbon steel to specialty
             alloys, we recommend visiting{" "}
             <a
-              href="https://texasflange.com"
+              href="https://texasflange.com?ref=steelflange"
               className="text-blue-700 underline font-semibold"
             >
               Texas Flange
@@ -257,7 +283,7 @@ export default function ArticlePage() {
             Contact the experts at Texas Flange for all your industrial flange needs.
           </p>
           <a
-            href="https://texasflange.com/contact-us/"
+            href="https://texasflange.com/contact-us/?ref=steelflange"
             className="bg-white text-gray-900 px-8 py-3 rounded font-bold hover:bg-gray-100 transition inline-block"
           >
             Get a Quote
