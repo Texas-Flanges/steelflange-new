@@ -148,7 +148,7 @@ export default function Home() {
 
       {/* HERO */}
       <section
-        className="relative py-24 md:py-32"
+        className="relative py-12 sm:py-16 lg:py-24 md:py-32"
         style={{
           backgroundImage: "linear-gradient(rgba(26,58,92,0.72), rgba(26,58,92,0.72)), url(/hero-flange.jpg)",
           backgroundSize: "cover",
@@ -181,7 +181,7 @@ export default function Home() {
       </section>
 
       {/* WHAT IS A STEEL FLANGE */}
-      <section id="about" className="py-16 md:py-20 bg-white">
+      <section id="about" className="py-16 md:py-10 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -229,7 +229,7 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE STEEL */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-10 sm:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="rv order-2 md:order-1">
@@ -268,7 +268,7 @@ export default function Home() {
       </section>
 
       {/* COMMON TYPES */}
-      <section id="types" className="py-16 md:py-20 bg-white">
+      <section id="types" className="py-16 md:py-10 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center rv">
             Common Types of Steel Flanges
@@ -303,7 +303,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-16 md:py-20 bg-gray-50">
+      <section id="faq" className="py-16 md:py-10 sm:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center rv">
             Frequently Asked Questions
