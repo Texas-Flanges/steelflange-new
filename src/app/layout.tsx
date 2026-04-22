@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://steelflange.com"),
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }
