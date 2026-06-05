@@ -72,8 +72,8 @@ export default function ExoticAlloysPage() {
                 The nickel-chromium and nickel-chromium-molybdenum grades.
                 Inconel 600 (UNS N06600) is the workhorse nickel-chromium
                 for high temperature service, used in heat treating
-                equipment, nuclear reactor components, and chemical process
-                at elevated temperature. Inconel 625 (UNS N06625) adds
+                equipment, furnace fixtures, and chemical process at
+                elevated temperature. Inconel 625 (UNS N06625) adds
                 significant molybdenum and niobium for combined high
                 strength and aqueous corrosion resistance. Incoloy 825
                 (UNS N08825) is the iron-rich, lower-cost option for

@@ -220,8 +220,9 @@ export default function FlangesPage() {
           <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mb-10">
             Waterworks, fire protection, low-pressure process, and HVAC distribution do not need a
             forged Class 1500 flange. AWWA C207 covers ring and hub flanges sized for water service
-            from 4 inch up through 144 inch as a standard, with plate-cut work running through 203
-            inch on custom orders. Bolt patterns on Class B, D, and E match ASME B16.1 Class 125
+            from 4 inch up through 144 inch in Class B, D, and E (Class F is published only through
+            48 inch). Above 144 inch is fully custom plate fabrication outside any published
+            standard; dimensions, drilling, and pressure rating are project-specific. Bolt patterns on Class B, D, and E match ASME B16.1 Class 125
             for sizes 24 inch and under so retrofits do not require ripping out mating flanges.
           </p>
           <div className="bg-[#0F1316] border border-gray-700 p-8">
@@ -232,12 +233,14 @@ export default function FlangesPage() {
             <SpecRow label="Class D (12 in and smaller)" value="175 psi" />
             <SpecRow label="Class D (larger than 12 in)" value="150 psi" />
             <SpecRow label="Class E - 4 in to 144 in" value="275 psi" />
-            <SpecRow label="Class F - 4 in to 144 in" value="300 psi" />
+            <SpecRow label="Class F - 4 in to 48 in" value="300 psi" />
           </div>
           <p className="text-gray-300 leading-relaxed max-w-3xl mt-8">
-            Above 144 inch, AWWA C207 stops and custom plate-cut takes over. We supply plate
-            flanges to drawing through 203 inch outside diameter in carbon steel and structural
-            grades. Drilling, facing, and surface prep all per the engineering drawing.
+            Above 144 inch the published standard ends and the work becomes fully custom plate
+            fabrication. Dimensions, drilling, and pressure rating are project-specific and not
+            governed by any published flange code. We have coordinated plate-cut work through 203
+            inch outside diameter in carbon steel and structural grades on prior projects.
+            Drilling, facing, and surface prep all per the engineering drawing.
           </p>
         </div>
       </section>
@@ -348,7 +351,7 @@ export default function FlangesPage() {
             Steel flanges run the full range of pipe and vessel sizes used in industrial and
             municipal service. Forged sizes track the ASME and MSS standards. Plate-cut sizes
             extend well past where forging stops, all the way to 203 inch on custom diameters
-            handled through our custom machining program.
+            coordinated through partner plate-cut fabricators.
           </p>
           <div className="bg-[#0F1316] border border-gray-700 p-8">
             <SpecRow label="ASME B16.5 forged" value="1/2 in to 24 in" />

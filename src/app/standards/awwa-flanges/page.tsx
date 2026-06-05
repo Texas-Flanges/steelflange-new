@@ -4,7 +4,7 @@ export const metadata = {
   title:
     "AWWA C207 Steel Flanges | Class B, D, E, F Plate-Cut Large Diameter",
   description:
-    "AWWA C207 plate-cut steel flange reference. Class B (86 psi), Class D (175 psi), Class E (275 psi), and Class F (300 psi) in carbon steel and stainless. Sizes 4 inch through 144 inch for waterworks, structural, and large diameter service.",
+    "AWWA C207 plate-cut steel flange reference. Class B (86 psi), Class D (175 psi), Class E (275 psi), and Class F (300 psi) in carbon steel and stainless. Sizes 4 inch through 144 inch (Class B/D/E) and 4 inch through 48 inch (Class F) for waterworks, structural, and large diameter service.",
 };
 
 export default function AwwaFlangesPage() {
@@ -21,11 +21,12 @@ export default function AwwaFlangesPage() {
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
             AWWA C207 is where plate-cut steel flanges earned their reputation.
             The standard covers steel ring flanges and hub flanges from 4 inch
-            through 144 inch, fabricated from rolled plate rather than forged
-            from a billet. Class B, D, E, and F bracket the working pressure
-            range from 86 psi cold water service up through 300 psi, and the
-            same dimensional pattern that makes them drop-in compatible with
-            ANSI B16.1 Class 125 cast iron is what keeps them in nearly every
+            through 144 inch in Class B, D, and E, and 4 inch through 48 inch
+            in Class F, fabricated from rolled plate rather than forged from
+            a billet. The four classes bracket the working pressure range
+            from 86 psi cold water service up through 300 psi, and the same
+            dimensional pattern that makes them drop-in compatible with ANSI
+            B16.1 Class 125 cast iron is what keeps them in nearly every
             municipal waterworks, treatment plant, transmission main, and
             large diameter structural application across North America.
           </p>
@@ -75,8 +76,9 @@ export default function AwwaFlangesPage() {
           <p className="text-gray-300 leading-relaxed mb-8 max-w-3xl">
             The standard organizes plate-cut steel flanges into four pressure
             classes. The class determines working pressure, plate thickness,
-            and where the flange fits in the system. All four classes are
-            available across the full 4 inch through 144 inch size range.
+            and where the flange fits in the system. Class B, D, and E
+            cover the full 4 inch through 144 inch range; Class F is published
+            for 4 inch through 48 inch only.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-[#2a2f35] border border-gray-700">
@@ -108,7 +110,7 @@ export default function AwwaFlangesPage() {
                   <td className="p-4">Heavier pattern, see C207 table</td>
                 </tr>
                 <tr className="border-t border-gray-700 bg-[#1B1F23]">
-                  <td className="p-4 font-semibold">Class F</td>
+                  <td className="p-4 font-semibold">Class F<br/><span className="text-xs text-gray-400 font-normal">4 in to 48 in only</span></td>
                   <td className="p-4">300 psi CWP</td>
                   <td className="p-4">Hydroelectric, penstock, severe service</td>
                   <td className="p-4">Heaviest C207 pattern</td>
@@ -187,6 +189,16 @@ export default function AwwaFlangesPage() {
             pounds. The C207 Class D equivalent runs closer to 220 pounds,
             which changes hanger sizing, lift planning, and the structural
             load on the existing rack.
+          </p>
+          <p className="text-gray-300 leading-relaxed mt-6 max-w-3xl">
+            One caution on the cross-standard match. C207 is flat-face by
+            design, and B16.1 Class 125 cast iron is flat-face, so the
+            geometry works cleanly. If a project tries to extend the same
+            idea to a forged raised-face flange against cast iron, the
+            raised face concentrates bolt load on a small annular ring and
+            can crack the cast iron during makeup. Use flat-face on the
+            steel side any time the mating part is cast iron, regardless of
+            standard.
           </p>
         </div>
       </section>

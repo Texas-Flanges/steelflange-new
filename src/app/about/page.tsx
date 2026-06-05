@@ -33,7 +33,7 @@ export default function AboutPage() {
           </p>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
             This resource was built to flatten that. Forged catalog flanges sit alongside plate-cut
-            structural rings. Slip-on slip-ons through 203 inch sit alongside F91 chrome-moly weld
+            structural rings. Plate-cut blind and ring flanges through 203 inch sit alongside F91 chrome-moly weld
             necks for power generation service. Sourcing comes from one point. Documentation matches.
           </p>
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
             <li>Forged flanges per ASME B16.5 (1/2 inch through 24 inch) and B16.47 Series A and B (26 inch through 60 inch)</li>
             <li>Plate-cut flanges per AWWA C207, MSS SP-44, and custom drawings for non-catalog sizes</li>
-            <li>Slip-on specialty in extreme diameters through 203 inch for tank, vessel, and structural service</li>
+            <li>Plate-cut blind and ring flanges in extreme diameters through 203 inch for tank, vessel, and structural service</li>
             <li>Carbon grades from A105 and A350 LF2 through A694 high yield for pipeline mating</li>
             <li>Stainless 304 and 316 in F304/F304L and F316/F316L dual certified</li>
             <li>Chrome-moly F11, F22, and F91 for elevated temperature and creep service</li>

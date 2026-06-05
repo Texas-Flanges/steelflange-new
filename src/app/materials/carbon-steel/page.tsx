@@ -261,8 +261,8 @@ export default function CarbonSteelPage() {
             were dominated by cast iron flanges per the old ANSI B16.1
             standard. Cast iron is brittle, fails poorly under impact,
             and corrodes unpredictably. Most modern projects replace
-            it with steel - either ductile iron under AWWA C110 and
-            C153 for direct cast-iron compatibility, or carbon steel
+            it with steel - either ductile iron under AWWA C110 for
+            direct cast-iron compatibility, or carbon steel
             cut from SA-516-70 or A36 plate to AWWA C207 dimensions
             for ring and hub flanges.
           </p>

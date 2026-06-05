@@ -90,7 +90,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <StandardCard code="ASME B16.5" desc="Pipe Flanges 1/2&quot; - 24&quot;" />
             <StandardCard code="ASME B16.47" desc="Large Diameter 26&quot; - 60&quot;" />
-            <StandardCard code="AWWA C207" desc="Plate Flanges 4&quot; - 144&quot;" />
+            <StandardCard code="AWWA C207" desc="Plate Flanges 4&quot; - 144&quot; (Cl F: 4&quot; - 48&quot;)" />
             <StandardCard code="API 605" desc="Petroleum Service Flanges" />
             <StandardCard code="ANSI B16.1" desc="Cast Iron Compatibility" />
             <StandardCard code="MSS SP-44" desc="High Yield F42 - F70" />
@@ -111,7 +111,7 @@ export default function HomePage() {
             />
             <WhyCard
               title="Custom Without the Wait"
-              desc="Non-standard bores, oversized blanks, special facings, RTJ grooves. Our machine shop runs alongside our stock inventory. Catalog stops where most jobs actually start."
+              desc="Non-standard bores, oversized blanks, special facings, RTJ grooves. Our machining program runs alongside stock inventory through partner shops. Catalog stops where most jobs actually start."
             />
             <WhyCard
               title="Full Material Range"
@@ -119,7 +119,7 @@ export default function HomePage() {
             />
             <WhyCard
               title="Sizes Through 203 Inches"
-              desc="Standard ASME caps at 60 inch. AWWA goes to 144. Our custom shop has supplied flanges through 203 inches. Big bore, big diameter, big project. We have done it."
+              desc="Standard ASME caps at 60 inch. AWWA goes to 144. Above 144 inch is fully custom plate fabrication outside any published standard; dimensions, drilling, and pressure rating are project-specific. We have coordinated plate-cut work through 203 inches on prior projects."
             />
             <WhyCard
               title="MTRs Before the Truck Arrives"
@@ -188,7 +188,7 @@ export default function HomePage() {
           <div className="space-y-6">
             <FaqItem q="When should I use plate flanges instead of forged?" a="Plate flanges are appropriate for low-pressure, non-code applications or for very large diameters where forgings are impractical. They are not a substitute for forged flanges in ASME pressure piping without engineering approval. Common use cases include AWWA waterworks (typically 300 psi or less), structural steel connections, tank nozzles, and ductwork." />
             <FaqItem q="Whats the difference between A105 and A694 carbon steel?" a="A105 is standard forged carbon steel with a yield around 36 ksi. It covers most general industrial piping in Class 150 through 600. A694 is high yield carbon, heat-treated to push the yield threshold up. Grades F42 through F70 cover yields from 42 to 70 ksi. You see A694 specified in Class 600 and above, particularly on pipeline flanges (per MSS SP-44) where the mating pipe is also high yield (X42 through X70)." />
-            <FaqItem q="What size range can you supply?" a="Standard inventory covers 1/2 inch through 24 inch NPS in ASME B16.5. Large diameter from 26 inch through 60 inch in ASME B16.47. AWWA goes through 144 inch. For custom dimensions we have supplied flanges through 203 inches OD. Call (281) 484-8325 for project-specific size questions." />
+            <FaqItem q="What size range can you supply?" a="Standard inventory covers 1/2 inch through 24 inch NPS in ASME B16.5. Large diameter from 26 inch through 60 inch in ASME B16.47. AWWA C207 goes through 144 inch in Class B, D, and E; Class F is published only through 48 inch. Above 144 inch is fully custom plate fabrication outside any published standard. We have coordinated plate-cut work through 203 inches OD on prior projects. Call (281) 484-8325 for project-specific size questions." />
             <FaqItem q="Can you handle chrome-moly grades like F11, F22, and F91?" a="Yes. F11 and F22 are common chrome-moly grades for high-temperature service. F91 (Grade 91) is used in supercritical and ultra-supercritical steam piping where creep resistance is critical. We stock common sizes and source the rest. Post weld heat treatment and hardness control matter, so we recommend specifying the full processing requirements at quote time." />
             <FaqItem q="Do you provide mill test reports?" a="Every order ships with MTRs traceable to the original heat number. EN 10204 3.1 and 3.2 certificates available on request. You get the documentation before the truck arrives, not after." />
             <FaqItem q="What is your typical lead time?" a="Standard flanges ship from stock. Custom and high-yield work follows a clear production timeline with updates, not silence. Rush options available when the shutdown clock is running. Call (281) 484-8325 for project-specific timelines." />
