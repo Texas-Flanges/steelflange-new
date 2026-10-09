@@ -170,7 +170,7 @@ export default function Home() {
             high-quality flanges from an industry leader, we proudly direct you to our
             partners at{" "}
             <a
-              href="https://texasflange.com?ref=steelflange"
+              href="https://texasflange.com/carbon-steel-flanges/?ref=steelflange"
               className="text-white underline font-semibold hover:text-gray-100"
             >
               Texas Flange
@@ -205,7 +205,7 @@ export default function Home() {
             <p className="mt-4">
               An expert team is available at{" "}
               <a
-                href="https://texasflange.com?ref=steelflange"
+                href="https://texasflange.com/carbon-steel-flanges/?ref=steelflange"
                 className="text-blue-700 underline font-semibold"
               >
                 Texas Flange
@@ -465,7 +465,7 @@ export default function Home() {
             <p className="mt-1">
               A resource by{" "}
               <a
-                href="https://texasflange.com?ref=steelflange"
+                href="https://texasflange.com/carbon-steel-flanges/?ref=steelflange"
                 className="text-white hover:underline"
               >
                 Texas Flange
