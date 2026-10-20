@@ -46,7 +46,12 @@ export default function Footer() {
 
       <div className="border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-          <p>&copy; 2026 Steel Flange. All rights reserved.</p>
+          <p>
+            &copy; 2026 Steel Flange. All rights reserved. A resource by{" "}
+            <a href="https://texasflange.com/carbon-steel-flanges/?ref=steelflange" className="text-gray-300 hover:underline">
+              Texas Flange
+            </a>
+          </p>
           <div className="flex gap-4 mt-2 md:mt-0">
             <Link href="/privacy-policy" className="text-gray-400 hover:text-[#475569]">Privacy Policy</Link>
             <Link href="/about" className="text-gray-400 hover:text-[#475569]">About</Link>

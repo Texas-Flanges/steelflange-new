@@ -181,6 +181,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-display font-bold mb-6 text-ink">Which Steel Is Most Popular?</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            The most widely used material grade out there is A105 forged carbon steel. It covers a broad size range - 1/2&quot; to 24&quot; under ASME B16.5, 26&quot; to 60&quot; under ASME B16.47, and all the way up to 96&quot; under B16.1. That size flexibility, combined with a working range of ambient up to 1,000°F and pressures anywhere from 20 to 6,170 psi, makes carbon steel flanges a practical fit for a wide variety of industrial applications. They also happen to be one of the more cost-effective options on the market, which never hurts, and it is the industry standard replacement for the previously designed cast iron specification. Most A105 flanges come painted from the factory, but you can also opt for galvanization.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-cream py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-display font-bold mb-6 text-ink">Why Choose High Yield Carbon Steel Flanges?</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            When we talk about yield strength, we&apos;re really just talking about how much stress a piece of steel can take before it starts to permanently deform. That threshold is known as the &quot;yield point&quot; and is essentially the maximum load you want to put on the material. The good news about yielding is that it&apos;s a gradual process, so deformation is usually visible before anything catastrophic happens. High yield carbon steel flanges are heat treated to push that deformation threshold higher, which makes them the go-to choice for high pressure and high temperature applications: typically Class 600# and above. They also carry a slightly higher carbon content than mild steel, which makes them tougher and less brittle overall. This also has an effect on weldability, so make sure to take that into consideration if you are a fabricator. What really sets these flanges apart in demanding service conditions is their resistance to wear. When you need something that&apos;s going to last in a tough environment, that durability is what matters most. These flanges fall under specifications A694 and MSS-SP44, which cover the full range of grades from F42 to F70, with F52 and F65 being the most common choices.
+          </p>
+        </div>
+      </section>
+
       <section className="bg-cream py-20 px-4 border-t border-gray-200">
         <div className="max-w-4xl mx-auto">
           <p className="uppercase tracking-wider text-[#475569] text-sm mb-3">Common Questions</p>
