@@ -81,6 +81,42 @@ export default function BlogIndexPage() {
                 </Link>
               </article>
             ))}
+
+            <article className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-wrap items-center gap-4 mb-4 text-sm">
+                <span className="inline-block bg-[#475569] text-white px-3 py-1 rounded-full font-semibold uppercase tracking-wide text-xs">
+                  Basics
+                </span>
+                <span className="text-gray-600">May 8, 2024</span>
+                <span className="text-gray-400">|</span>
+                <span className="text-gray-600">3 min read</span>
+              </div>
+
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#1B1F23] mb-4">
+                <Link
+                  href="/understanding-steel-flange-basics-and-applications"
+                  className="hover:text-[#475569] transition-colors"
+                >
+                  Understanding Steel Flange: Basics and Applications
+                </Link>
+              </h2>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Dive into the essentials of the steel flange, from types to materials, with
+                clear, easy-to-follow explanations for beginners. Learn about forging vs.
+                casting, common flange types, and where they&apos;re used.
+              </p>
+
+              <Link
+                href="/understanding-steel-flange-basics-and-applications"
+                className="inline-flex items-center text-[#475569] font-semibold hover:underline"
+              >
+                Read the full article
+                <span className="ml-2" aria-hidden="true">
+                  &rarr;
+                </span>
+              </Link>
+            </article>
           </div>
 
           <div className="mt-16 bg-white border border-gray-200 rounded-lg p-8">

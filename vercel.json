@@ -1,0 +1,30 @@
+{
+  "redirects": [
+    { "source": "/contact-us", "destination": "https://www.texasflange.com/contact-us/?ref=steelflange", "permanent": true },
+    { "source": "/contact-us-2", "destination": "https://www.texasflange.com/contact-us/?ref=steelflange", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/about-us-2", "destination": "/about", "permanent": true },
+    { "source": "/faq", "destination": "/", "permanent": true },
+    { "source": "/gallery", "destination": "/", "permanent": true },
+    { "source": "/category/blogs", "destination": "/blog", "permanent": true },
+    { "source": "/blogs", "destination": "/blog", "permanent": true },
+    { "source": "/blog-list", "destination": "/blog", "permanent": true },
+    { "source": "/blog-post2", "destination": "/blog", "permanent": true },
+    { "source": "/uncategorized", "destination": "/blog", "permanent": true },
+    { "source": "/Uncategorized", "destination": "/blog", "permanent": true },
+    { "source": "/category/uncategorized", "destination": "/blog", "permanent": true },
+    { "source": "/cad-3d-flange-drawings", "destination": "/resources/cad-drawings", "permanent": true },
+    { "source": "/company.html", "destination": "/", "permanent": true },
+    { "source": "/Catalog.pdf", "destination": "/", "permanent": true },
+    { "source": "/sample-page", "destination": "/", "permanent": true },
+    { "source": "/shop", "destination": "/", "permanent": true },
+    { "source": "/cart", "destination": "/", "permanent": true },
+    { "source": "/understanding-professional-steel-design-and-specifications", "destination": "/understanding-steel-flange-basics-and-applications", "permanent": true },
+    { "source": "/industrial-applications-for-professional-steel", "destination": "/understanding-steel-flange-basics-and-applications", "permanent": true },
+    { "source": "/standards-and-quality-assurance-in-professional-steel", "destination": "/understanding-steel-flange-basics-and-applications", "permanent": true },
+    { "source": "/blog/understanding-professional-steel-design-and-specifications", "destination": "/understanding-steel-flange-basics-and-applications", "permanent": true },
+    { "source": "/blog/industrial-applications-for-professional-steel", "destination": "/understanding-steel-flange-basics-and-applications", "permanent": true },
+    { "source": "/blog/standards-and-quality-assurance-in-professional-steel", "destination": "/understanding-steel-flange-basics-and-applications", "permanent": true },
+    { "source": "/services", "destination": "/products", "permanent": true }
+  ]
+}
