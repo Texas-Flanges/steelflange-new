@@ -1,479 +1,288 @@
-import type { Metadata } from "next";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Steel Flange - Your Guide to Industrial Steel Flanges",
-  description:
-    "A simple, surface-level guide for anyone looking to understand the basics of steel flanges. Learn about types, materials, and functions of steel flanges.",
-  keywords:
-    "steel flanges, steel pipe flanges, forged flanges, industrial steel flanges, flange manufacturer, weld neck flange, slip-on flange, blind flange",
-  openGraph: {
-    title: "Steel Flange - Your Guide to Industrial Steel Flanges",
-    description:
-      "A simple, surface-level guide for anyone looking to understand the basics of steel flanges. Learn about types, materials, and functions of steel flanges.",
-    url: "https://steelflange.com",
-    type: "website",
-    images: [],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Steel Flange - Your Guide to Industrial Steel Flanges",
-    description:
-      "A simple, surface-level guide for anyone looking to understand the basics of steel flanges. Learn about types, materials, and functions of steel flanges.",
-  },
-  alternates: { canonical: "https://steelflange.com" },
-};
-
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Steel Flanges",
-              url: "https://steelflange.com",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+1-281-484-8325",
-                contactType: "sales",
-                email: "sales@texasflange.com",
-              },
-              parentOrganization: {
-                "@type": "Organization",
-                name: "Texas Flange & Fitting Supply",
-                url: "https://texasflange.com",
-              },
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "What is a steel flange?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "A flange is a forged or cast steel ring designed to connect sections of pipe, or to join a pipe to a valve, pump, or other piece of equipment. Flanges are bolted together with a gasket in between to create a secure, leak-proof seal that allows for easier system maintenance.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Why choose a steel flange?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Steel flanges are the industry standard because they offer the best combination of strength, durability, and cost-effectiveness. They handle high-pressure and high-temperature requirements, making them the go-to material for oil and gas, manufacturing, and power generation.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How do flanges connect pipes?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "A flange is welded or screwed onto the end of each pipe. A gasket is placed between the two flat flange faces, then bolts are inserted through the matching bolt holes and tightened with nuts. This compresses the gasket, creating a tight, leak-proof seal.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "What types of steel flange are there?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "The most common types include Weld Neck flanges for high-pressure and high-temperature applications, Slip-On flanges for easier alignment and installation, and Blind flanges to seal the end of a piping system.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Where are steel flanges used?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Steel flanges are essential in virtually all industrial piping systems, especially in oil and gas pipelines and refineries, petrochemical and chemical processing plants, power generation facilities, and municipal water treatment systems.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How do I choose the right flange?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Consider pipe size, pressure rating, material compatibility, and application environment for best fit. An expert team at Texas Flange can help you with any questions.",
-                  },
-                },
-              ],
-            },
-          ]),
-        }}
-      />
-
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          body > header.border-gray-200, header.border-gray-200 { display: none !important; }
-          .rv { opacity: 1; transform: none; }
-        `,
-        }}
-      />
-
-      {/* HEADER */}
-      <header
-        className="sticky top-0 z-50 backdrop-blur-md border-b"
-        style={{ background: "#1a3a5c" }}
-      >
-        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-          <a href="/" className="text-xl font-bold text-white tracking-tight">
-            Steel Flange
-          </a>
-          <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#about" className="text-gray-200 hover:text-white transition">
-              About
-            </a>
-            <a href="#types" className="text-gray-200 hover:text-white transition">
-              Types
-            </a>
-            <a href="#faq" className="text-gray-200 hover:text-white transition">
-              FAQ
-            </a>
-            <a href="/blog" className="text-gray-200 hover:text-white transition">
-              Blog
-            </a>
-            <a
-              href="https://texasflange.com/contact-us/?ref=steelflange"
-              className="bg-white text-gray-900 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
-            >
-              Get a Quote
-            </a>
-          </nav>
+      <section className="bg-[#1B1F23] text-white py-24 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-[#475569] to-transparent" />
         </div>
-      </header>
-
-      {/* HERO */}
-      <section
-        className="relative py-12 sm:py-16 lg:py-24 md:py-32"
-        style={{
-          backgroundImage: "linear-gradient(rgba(26,58,92,0.72), rgba(26,58,92,0.72)), url(/hero-flange.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 rv">
-            Steel Flange
+        <div className="max-w-6xl mx-auto relative z-10">
+          <p className="text-[#475569] uppercase tracking-[0.3em] text-sm font-semibold mb-6">
+            Forged. Plate-Cut. Custom.
+          </p>
+          <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight mb-6 text-white">
+            Steel Flanges Built for<br />
+            <span className="text-[#475569]">Every Service Class</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 rv max-w-3xl mx-auto leading-relaxed">
-            We know the industrial piping world can be complex. This site was created to
-            be a simple, surface-level guide for anyone looking to understand the basics.
-            Here, you&apos;ll find straightforward articles and guides on the common types,
-            materials, and functions of steel flanges.
+          <p className="text-xl text-gray-300 max-w-3xl leading-relaxed mb-8">
+            A105 carbon for the day-to-day. A694 high yield for Class 600 and above. F22 and F91 chrome-moly for high-temp creep service. Plate-cut AWWA for waterworks. Custom diameters out to 203 inches. Whatever the project needs, we stock or machine it.
           </p>
-          <p className="text-base text-gray-300 rv max-w-2xl mx-auto">
-            This is an informational resource only. When you&apos;re ready to source
-            high-quality flanges from an industry leader, we proudly direct you to our
-            partners at{" "}
-            <a
-              href="https://texasflange.com/carbon-steel-flanges/?ref=steelflange"
-              className="text-white underline font-semibold hover:text-gray-100"
-            >
-              Texas Flange
-            </a>
-            .
+          <div className="flex flex-wrap gap-4">
+            <Link href="/contact" className="bg-[#475569] text-white px-8 py-3 rounded font-semibold hover:bg-[#334155] transition">
+              Request a Quote
+            </Link>
+            <Link href="/products/flanges" className="border border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-[#1B1F23] transition">
+              Browse Flanges
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#1B1F23] border-t border-[#475569]/30 text-white py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="uppercase tracking-wider text-[#475569] text-sm mb-3 text-center">Three Production Paths</p>
+          <h2 className="text-4xl font-display font-bold mb-12 text-center text-white">Forged, Plate, or Custom</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <PathCard tier="Forged" desc="The industry default. ASME B16.5 and B16.47 forged carbon, stainless, and alloy. A105, A350 LF2, F11, F22, F91, plus duplex and exotic. Class 150 through 2500. 1/2 inch through 60 inch NPS." href="/standards/asme-flanges" />
+            <PathCard tier="Plate-Cut" desc="Flame-cut or CNC-machined from certified plate. AWWA C207 for waterworks, B16.1 cast iron pattern compatibility, structural connections, tank nozzles. Economical for low-pressure and non-code service." href="/standards/awwa-flanges" />
+            <PathCard tier="Custom" desc="Non-standard sizes through 203 inches. Overbore, special facings, ring-type joint grooves, weld overlay, hard facing. Drawings or specs, either works. Full MTR documentation on every piece." href="/products/custom-machining" />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cream py-16 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <Stat number="203&quot;" label="Max Custom Diameter" />
+          <Stat number="50+" label="Material Grades" />
+          <Stat number="A105 - F91" label="Carbon to Chrome-Moly" />
+          <Stat number="1986" label="Supplying Since" />
+        </div>
+      </section>
+
+      <section className="bg-cream py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="uppercase tracking-wider text-[#475569] text-sm mb-3">What We Supply</p>
+          <h2 className="text-4xl font-display font-bold mb-4 text-ink">Every Steel Flange Type. Every Configuration.</h2>
+          <p className="text-lg text-gray-700 mb-12 max-w-3xl">
+            Slip-on for forgiving fit-up. Weld neck when the service gets serious. Blind to cap it off. Plus the specialty work: orifice, spectacle blind, long weld neck, RTJ, lap joint. All in steel.
           </p>
-        </div>
-      </section>
-
-      {/* WHAT IS A STEEL FLANGE */}
-      <section id="about" className="py-16 md:py-10 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 rv">
-                What is a Steel Flange?
-              </h2>
-              <div className="prose prose-lg max-w-none text-gray-700 rv">
-                <p>
-                  A steel flange is a fundamental component used to connect pipes, valves,
-                  pumps, and other equipment to form a complete industrial piping system.
-                  Typically forged or cast, these flanges are designed to be bolted together
-                  with a gasket in between to create a secure, leak-proof seal.
-                </p>
-            <p className="mt-4">
-              They are available in various types, like weld neck, slip-on, and blind
-              flanges, and different materials, such as carbon steel (A105) or stainless
-              steel (304/316). Selecting the correct flange requires matching its
-              dimensions, pressure rating (e.g., 150#, 300#), and technical specifications
-              to your project&apos;s requirements.
-            </p>
-            <p className="mt-4">
-              An expert team is available at{" "}
-              <a
-                href="https://texasflange.com/carbon-steel-flanges/?ref=steelflange"
-                className="text-blue-700 underline font-semibold"
-              >
-                Texas Flange
-              </a>{" "}
-              to help you with any questions you may have and all your sourcing needs.
-            </p>
-          </div>
-            </div>
-            <div className="rv">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/grid-flange.jpg"
-                alt="Close-up of various steel flanges arranged on a workshop table"
-                className="rounded-lg shadow-lg w-full"
-                width={606}
-                height={606}
-              />
-            </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <ProductCard
+              title="Flanges"
+              desc="Weld neck, slip-on, blind, threaded, socket weld, lap joint, orifice, spectacle blind, plate, long weld neck. 1/2 inch through 203 inch. Class 150 through 2500."
+              bullets={["ASME B16.5 & B16.47", "AWWA C207 & C228", "API 605 & MSS SP-44", "DIN & EN 1092-1"]}
+              href="/products/flanges"
+            />
+            <ProductCard
+              title="Pipe Fittings"
+              desc="Elbows, tees, reducers, caps, couplings, unions, and specialty fittings. Butt-weld, socket-weld, threaded. Carbon, stainless, chrome alloy."
+              bullets={["ASME B16.9 & B16.11", "Schedule 10 through XXH", "Seamless & welded", "Hot induction bends"]}
+              href="/products/fittings"
+            />
+            <ProductCard
+              title="Custom Machining"
+              desc="Non-standard bores, overbore flanges, RTJ grooves, weld overlay, hard facing, oversized blanks. Drawings or specs. The work that catalog flanges cannot cover."
+              bullets={["CNC turning & milling", "Ring-type joint grooves", "Weld overlay & hard facing", "Full MTR documentation"]}
+              href="/products/custom-machining"
+            />
           </div>
         </div>
       </section>
 
-      {/* WHY CHOOSE STEEL */}
-      <section className="py-16 md:py-10 sm:py-16 lg:py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="rv order-2 md:order-1">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/unsplash-flange.jpg"
-                alt="Steel flanges closeup showing bolt holes and machined faces"
-                className="rounded-lg shadow-lg w-full"
-                width={606}
-                height={606}
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 rv">
-                Why Choose a Steel Flange?
-              </h2>
-              <div className="prose prose-lg max-w-none text-gray-700 rv">
-                <p>
-                  Steel flanges are the industry&apos;s most trusted and widely specified
-                  material due to their exceptional strength, reliability, and
-                  cost-effectiveness. Ideal for most standard industrial applications, carbon
-                  steel provides robust performance in high-pressure and high-temperature
-                  environments.
-                </p>
-                <p className="mt-4">
-                  You can source all types, from weld neck and slip-on flanges to blind
-                  flanges, in common specifications like A105. This material is the workhorse
-                  for industries like oil and gas, power generation, and manufacturing, and it
-                  is available in all standard dimensions and pressure ratings (like 150# or
-                  300#) to meet your project&apos;s requirements.
-                </p>
-              </div>
-            </div>
+      <section className="bg-[#1B1F23] text-white py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="uppercase tracking-wider text-[#475569] text-sm mb-3">Standards & Compliance</p>
+          <h2 className="text-4xl font-display font-bold mb-4 text-white">Every Code, Documented</h2>
+          <p className="text-lg text-gray-300 mb-12 max-w-3xl">
+            Forged or plate, every flange ships with full material traceability against the standard it was ordered to. EN 10204 3.1 and 3.2 certificates on request.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <StandardCard code="ASME B16.5" desc="Pipe Flanges 1/2&quot; - 24&quot;" />
+            <StandardCard code="ASME B16.47" desc="Large Diameter 26&quot; - 60&quot;" />
+            <StandardCard code="AWWA C207" desc="Plate Flanges 4&quot; - 144&quot; (Cl F: 4&quot; - 48&quot;)" />
+            <StandardCard code="API 605" desc="Petroleum Service Flanges" />
+            <StandardCard code="ANSI B16.1" desc="Cast Iron Compatibility" />
+            <StandardCard code="MSS SP-44" desc="High Yield F42 - F70" />
+            <StandardCard code="DIN / EN 1092" desc="European Metric" />
+            <StandardCard code="NACE MR0175" desc="Sour Service Materials" />
           </div>
         </div>
       </section>
 
-      {/* WHICH STEEL IS MOST POPULAR */}
-      <section className="py-16 md:py-10 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 rv">
-            Which Steel Is Most Popular?
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 rv">
-            <p>
-              The most widely used material grade out there is A105 forged carbon steel. It covers a broad size range - 1/2&quot; to 24&quot; under ASME B16.5, 26&quot; to 60&quot; under ASME B16.47, and all the way up to 96&quot; under B16.1. That size flexibility, combined with a working range of ambient up to 1,000°F and pressures anywhere from 20 to 6,170 psi, makes carbon steel flanges a practical fit for a wide variety of industrial applications. They also happen to be one of the more cost-effective options on the market, which never hurts, and it is the industry standard replacement for the previously designed cast iron specification. Most A105 flanges come painted from the factory, but you can also opt for galvanization.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE HIGH YIELD */}
-      <section className="py-16 md:py-10 sm:py-16 lg:py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 rv">
-            Why Choose High Yield Carbon Steel Flanges?
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 rv">
-            <p>
-              When we talk about yield strength, we&apos;re really just talking about how much stress a piece of steel can take before it starts to permanently deform. That threshold is known as the &quot;yield point&quot; and is essentially the maximum load you want to put on the material. The good news about yielding is that it&apos;s a gradual process, so deformation is usually visible before anything catastrophic happens. High yield carbon steel flanges are heat treated to push that deformation threshold higher, which makes them the go-to choice for high pressure and high temperature applications: typically Class 600# and above. They also carry a slightly higher carbon content than mild steel, which makes them tougher and less brittle overall. This also has an effect on weldability, so make sure to take that into consideration if you are a fabricator. What really sets these flanges apart in demanding service conditions is their resistance to wear. When you need something that&apos;s going to last in a tough environment, that durability is what matters most. These flanges fall under specifications A694 and MSS-SP44, which cover the full range of grades from F42 to F70, with F52 and F65 being the most common choices.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* COMMON TYPES */}
-      <section id="types" className="py-16 md:py-10 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center rv">
-            Common Types of Steel Flanges
-          </h2>
+      <section className="bg-cream py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="uppercase tracking-wider text-[#475569] text-sm mb-3">The Difference</p>
+          <h2 className="text-4xl font-display font-bold mb-12 text-ink">Why Engineers and Buyers Pick Us</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-lg p-6 rv">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Weld Neck Flange</h3>
-              <p className="text-gray-700">
-                Recognizable by its long, tapered hub. The hub is welded directly to the
-                pipe, providing a very strong, reinforced connection ideal for
-                high-pressure systems and extreme temperatures.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 rv">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Slip-On Flange</h3>
-              <p className="text-gray-700">
-                Designed to slip over the end of the pipe, then welded in two places.
-                Generally easier to install and align than a weld neck, making it a
-                popular choice for lower-pressure applications.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 rv">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Blind Flange</h3>
-              <p className="text-gray-700">
-                A solid disc with bolt holes used to seal or &quot;blank off&quot; the end
-                of a pipe, valve, or pressure vessel opening, effectively acting as a cap
-                for the system.
-              </p>
-            </div>
+            <WhyCard
+              title="Forged AND Plate"
+              desc="Most distributors do one or the other. We supply both. Forged for ASME pressure piping, plate-cut for AWWA waterworks and structural. One vendor, one set of paperwork."
+            />
+            <WhyCard
+              title="Custom Without the Wait"
+              desc="Non-standard bores, oversized blanks, special facings, RTJ grooves. Our machining program runs alongside stock inventory through partner shops. Catalog stops where most jobs actually start."
+            />
+            <WhyCard
+              title="Full Material Range"
+              desc="A105 mild carbon for the day-to-day. A694 high yield for Class 600 and above. F11, F22, F91 chrome-moly for steam and high-temp. Duplex and exotic when service demands it."
+            />
+            <WhyCard
+              title="Sizes Through 203 Inches"
+              desc="Standard ASME caps at 60 inch. AWWA goes to 144. Above 144 inch is fully custom plate fabrication outside any published standard; dimensions, drilling, and pressure rating are project-specific. We have coordinated plate-cut work through 203 inches on prior projects."
+            />
+            <WhyCard
+              title="MTRs Before the Truck Arrives"
+              desc="Every order includes mill test reports traceable to the heat number. No chasing paperwork after delivery. EN 10204 3.1 and 3.2 certificates available on request."
+            />
+            <WhyCard
+              title="Domestic or Import"
+              desc="Buy American projects covered. AIS and BABA documentation when required. Import sourcing when the budget calls for it. Both sides of the supply chain handled."
+            />
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="py-16 md:py-10 sm:py-16 lg:py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center rv">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-6">
+      <section className="bg-[#1B1F23] text-white py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="uppercase tracking-wider text-[#475569] text-sm mb-3">Sectors We Serve</p>
+          <h2 className="text-4xl font-display font-bold mb-4 text-white">From Refinery to Water Main</h2>
+          <p className="text-lg text-gray-300 mb-12 max-w-3xl">
+            Different industries, different specs. Same standard of execution.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
-              {
-                q: "What is a steel flange?",
-                a: "A flange is a forged or cast steel ring designed to connect sections of pipe, or to join a pipe to a valve, pump, or other piece of equipment. Flanges are bolted together with a gasket in between to create a secure, leak-proof seal that allows for easier system maintenance.",
-              },
-              {
-                q: "Why choose a steel flange?",
-                a: "Steel flanges are the industry standard because they offer the best combination of strength, durability, and cost-effectiveness. They are strong enough to handle high-pressure and high-temperature requirements, making them the go-to material for critical applications in oil and gas, manufacturing, and power generation. As the most common specification (like A105 for carbon steel), they are easy to source in all types (like weld neck or slip-on) and dimensions.",
-              },
-              {
-                q: "How do flanges connect pipes?",
-                a: "Flanges create a strong, bolted joint. A flange is typically welded or screwed onto the end of each pipe. To make the connection, a gasket (a ring of softer, compressible material) is placed between the two flat flange faces. Bolts are then inserted through the matching bolt holes and tightened with nuts. This action compresses the gasket, creating a tight, leak-proof seal that securely fastens the two pipe sections together.",
-              },
-              {
-                q: "What types of steel flange are there?",
-                a: "The most common types include Weld Neck flanges, which are ideal for high-pressure and high-temperature applications; Slip-On flanges, which are easier to align and install; and Blind flanges, which are used to seal the end of a piping system.",
-              },
-              {
-                q: "Where are steel flanges used?",
-                a: "Steel flanges are essential components in virtually all industrial and mechanical piping systems. You'll find them in any industry that transports liquids or gases, especially under high pressure or at high temperatures. Key industries include oil and gas (for pipelines and refineries), petrochemical and chemical processing plants, and power generation facilities. They are also critical for connecting pumps, valves, and equipment in municipal water treatment systems.",
-              },
-              {
-                q: "How do I choose the right flange?",
-                a: "Consider pipe size, pressure, material compatibility, and application environment for best fit, and call Texas Flange today!",
-              },
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-lg p-6 shadow-sm rv">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.q}</h3>
-                <p className="text-gray-700 leading-relaxed">{item.a}</p>
-              </div>
+              { slug: "oil-gas", name: "Oil & Gas" },
+              { slug: "petrochemical", name: "Petrochemical" },
+              { slug: "power-generation", name: "Power Generation" },
+              { slug: "waterworks", name: "Water & Wastewater" },
+              { slug: "chemical-processing", name: "Chemical Processing" },
+              { slug: "mining", name: "Mining & Minerals" },
+              { slug: "pulp-paper", name: "Pulp & Paper" },
+              { slug: "food-beverage", name: "Food & Beverage" },
+              { slug: "agriculture", name: "Agriculture" },
+              { slug: "hvac", name: "HVAC & Mechanical" },
+              { slug: "marine", name: "Marine & Shipbuilding" },
+              { slug: "data-centers", name: "Data Centers" }
+            ].map((i) => (
+              <Link key={i.slug} href={`/industries/${i.slug}`} className="bg-[#2A2F35] border border-gray-700 px-4 py-3 rounded text-center text-white hover:border-[#475569] hover:text-[#475569] transition">
+                {i.name}
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section
-        className="py-16 md:py-20"
-        style={{
-          background: "linear-gradient(135deg, #1a3a5c 0%, #2d5a87 100%)",
-        }}
-      >
-        <div className="max-w-3xl mx-auto px-6 text-center rv">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Source Your Flanges?
-          </h2>
-          <p className="text-gray-200 mb-8 text-lg">
-            When your project demands high-quality components that can be trusted under
-            pressure, partner with the experts at Texas Flange.
+      <section className="bg-cream py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="uppercase tracking-wider text-[#475569] text-sm mb-3">Technical Resources</p>
+          <h2 className="text-4xl font-display font-bold mb-4 text-ink">Engineering Reference</h2>
+          <p className="text-lg text-gray-700 mb-12 max-w-3xl">
+            Spec sheets are fine. Understanding why the spec matters is better. These guides help your team make faster, more confident decisions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://texasflange.com/contact-us/?ref=steelflange"
-              className="bg-white text-gray-900 px-8 py-3 rounded font-bold text-lg hover:bg-gray-100 transition"
-            >
-              Get a Quote
-            </a>
-            <a
-              href="tel:281-484-8325"
-              className="border-2 border-white text-white px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-gray-900 transition"
-            >
-              Call 281-484-8325
-            </a>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <TechCard title="Flange Types Guide" desc="Weld neck vs slip-on vs blind vs plate. Application criteria for each." href="https://www.texasflange.com/blog/the-complete-guide-to-flanges/?ref=steelflange-new" />
+            <TechCard title="Pressure-Temperature Ratings" desc="ASME B16.5 P-T tables. How class translates to PSI at temperature." href="https://www.texasflange.com/blog/use-of-asme-b16-5-standards-for-flange-pressure-ratings/?ref=steelflange-new" />
+            <TechCard title="Bolt Torque Reference" desc="Recommended torque values for B7 studs by size and lubrication." href="https://www.texasflange.com/blog/bolt-dimensions-explained-a-complete-guide-to-measuring-diameter-threads-and-length/?ref=steelflange-new" />
+            <TechCard title="Material Grade Guide" desc="A105 vs A694 vs F11 vs F22 vs F91. Which grade for which service." href="https://www.texasflange.com/blog/do-you-offer-different-material-grades-for-a-variety-of-industrial-flanges/?ref=steelflange-new" />
+            <TechCard title="Corrosion Prevention" desc="Coatings, galvanizing, material selection for corrosive environments." href="https://www.texasflange.com/blog/flange-maintenance-101-prevent-rust-corrosion-effectively/?ref=steelflange-new" />
+            <TechCard title="Flange Dimension Tables" desc="ASME B16.5 dimensional data. OD, bolt circle, bolt holes, thickness by class." href="https://www.texasflange.com/flange-drawings-models2/blind/?ref=steelflange-new" />
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-white font-bold text-lg mb-3">Steel Flange</h3>
-              <p className="text-sm leading-relaxed">
-                An informational resource for understanding steel flanges. For sourcing
-                needs, visit our partners at Texas Flange.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-white font-bold text-lg mb-3">Quick Links</h3>
-              <div className="space-y-2 text-sm">
-                <a href="#about" className="block hover:text-white transition">
-                  About Steel Flanges
-                </a>
-                <a href="#types" className="block hover:text-white transition">
-                  Types of Flanges
-                </a>
-                <a href="#faq" className="block hover:text-white transition">
-                  FAQ
-                </a>
-                <a href="/blog" className="block hover:text-white transition">
-                  Blog
-                </a>
-                <a
-                  href="/understanding-steel-flange-basics-and-applications"
-                  className="block hover:text-white transition"
-                >
-                  Steel Flange Guide
-                </a>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-white font-bold text-lg mb-3">Contact</h3>
-              <div className="space-y-2 text-sm">
-                <p>
-                  Phone:{" "}
-                  <a href="tel:281-484-8325" className="hover:text-white transition">
-                    +1 281-484-8325
-                  </a>
-                </p>
-                <p>Fax: 281-484-8730</p>
-                <p>
-                  Email:{" "}
-                  <a
-                    href="mailto:sales@texasflange.com"
-                    className="hover:text-white transition"
-                  >
-                    sales@texasflange.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} Steel Flange. All rights reserved.</p>
-            <p className="mt-1">
-              A resource by{" "}
-              <a
-                href="https://texasflange.com/carbon-steel-flanges/?ref=steelflange"
-                className="text-white hover:underline"
-              >
-                Texas Flange
-              </a>
-            </p>
+      <section className="bg-cream py-20 px-4 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto">
+          <p className="uppercase tracking-wider text-[#475569] text-sm mb-3">Common Questions</p>
+          <h2 className="text-4xl font-display font-bold mb-12 text-ink">Frequently Asked</h2>
+          <div className="space-y-6">
+            <FaqItem q="When should I use plate flanges instead of forged?" a="Plate flanges are appropriate for low-pressure, non-code applications or for very large diameters where forgings are impractical. They are not a substitute for forged flanges in ASME pressure piping without engineering approval. Common use cases include AWWA waterworks (typically 300 psi or less), structural steel connections, tank nozzles, and ductwork." />
+            <FaqItem q="Whats the difference between A105 and A694 carbon steel?" a="A105 is standard forged carbon steel with a yield around 36 ksi. It covers most general industrial piping in Class 150 through 600. A694 is high yield carbon, heat-treated to push the yield threshold up. Grades F42 through F70 cover yields from 42 to 70 ksi. You see A694 specified in Class 600 and above, particularly on pipeline flanges (per MSS SP-44) where the mating pipe is also high yield (X42 through X70)." />
+            <FaqItem q="What size range can you supply?" a="Standard inventory covers 1/2 inch through 24 inch NPS in ASME B16.5. Large diameter from 26 inch through 60 inch in ASME B16.47. AWWA C207 goes through 144 inch in Class B, D, and E; Class F is published only through 48 inch. Above 144 inch is fully custom plate fabrication outside any published standard. We have coordinated plate-cut work through 203 inches OD on prior projects. Call (281) 484-8325 for project-specific size questions." />
+            <FaqItem q="Can you handle chrome-moly grades like F11, F22, and F91?" a="Yes. F11 and F22 are common chrome-moly grades for high-temperature service. F91 (Grade 91) is used in supercritical and ultra-supercritical steam piping where creep resistance is critical. We stock common sizes and source the rest. Post weld heat treatment and hardness control matter, so we recommend specifying the full processing requirements at quote time." />
+            <FaqItem q="Do you provide mill test reports?" a="Every order ships with MTRs traceable to the original heat number. EN 10204 3.1 and 3.2 certificates available on request. You get the documentation before the truck arrives, not after." />
+            <FaqItem q="What is your typical lead time?" a="Standard flanges ship from stock. Custom and high-yield work follows a clear production timeline with updates, not silence. Rush options available when the shutdown clock is running. Call (281) 484-8325 for project-specific timelines." />
           </div>
         </div>
-      </footer>
+      </section>
+
+      <section className="bg-[#475569] text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-white">
+            Need Steel Flanges? Let's Talk.
+          </h2>
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            Whether you need ten weld necks for a maintenance shutdown or a custom plate flange machined to drawing, the process starts with a conversation.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/contact" className="bg-white text-[#475569] px-8 py-3 rounded font-bold hover:bg-cream transition">Request a Quote</Link>
+            <a href="tel:+12814848325" className="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-[#475569] transition">(281) 484-8325</a>
+          </div>
+        </div>
+      </section>
     </>
+  );
+}
+
+function PathCard({ tier, desc, href }: { tier: string; desc: string; href: string }) {
+  return (
+    <Link href={href} className="block bg-[#2A2F35] border border-gray-700 rounded p-6 hover:border-[#475569] transition">
+      <p className="text-[#475569] text-xs uppercase tracking-wider mb-2 font-semibold">{tier}</p>
+      <p className="text-gray-300 leading-relaxed">{desc}</p>
+    </Link>
+  );
+}
+
+function Stat({ number, label }: { number: string; label: string }) {
+  return (
+    <div>
+      <p className="text-4xl md:text-5xl font-display font-bold text-[#475569]" dangerouslySetInnerHTML={{ __html: number }} />
+      <p className="text-gray-700 text-sm uppercase tracking-wider mt-2">{label}</p>
+    </div>
+  );
+}
+
+function ProductCard({ title, desc, bullets, href }: { title: string; desc: string; bullets: string[]; href: string }) {
+  return (
+    <div className="bg-white border border-gray-200 rounded p-6 hover:border-[#475569] transition">
+      <h3 className="text-2xl font-display font-bold mb-3 text-ink">{title}</h3>
+      <p className="text-gray-700 mb-4 leading-relaxed">{desc}</p>
+      <ul className="space-y-1 text-sm text-gray-700 mb-6">
+        {bullets.map((b) => (
+          <li key={b} className="flex items-start"><span className="text-[#475569] mr-2">&#10003;</span><span>{b}</span></li>
+        ))}
+      </ul>
+      <Link href={href} className="text-[#475569] font-semibold hover:text-[#334155]">View Details &rarr;</Link>
+    </div>
+  );
+}
+
+function StandardCard({ code, desc }: { code: string; desc: string }) {
+  return (
+    <div className="border border-gray-700 rounded p-4 bg-[#2A2F35]">
+      <p className="text-white font-display font-bold text-lg mb-1">{code}</p>
+      <p className="text-gray-300 text-sm" dangerouslySetInnerHTML={{ __html: desc }} />
+    </div>
+  );
+}
+
+function WhyCard({ title, desc }: { title: string; desc: string }) {
+  return (
+    <div className="border-l-4 border-[#475569] pl-5">
+      <h3 className="text-xl font-display font-bold mb-2 text-ink">{title}</h3>
+      <p className="text-gray-700 leading-relaxed">{desc}</p>
+    </div>
+  );
+}
+
+function TechCard({ title, desc, href }: { title: string; desc: string; href: string }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="block bg-white border border-gray-200 rounded p-5 hover:border-[#475569] transition">
+      <h3 className="font-display font-bold text-lg mb-2 text-ink">{title}</h3>
+      <p className="text-gray-700 text-sm">{desc}</p>
+      <p className="text-[#475569] text-sm mt-3 font-semibold">Access Resource &rarr;</p>
+    </a>
+  );
+}
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  return (
+    <details className="bg-white border border-gray-200 rounded p-5 group">
+      <summary className="font-semibold text-ink cursor-pointer flex justify-between items-center">
+        <span>{q}</span>
+        <span className="text-[#475569] group-open:rotate-45 transition-transform">+</span>
+      </summary>
+      <p className="text-gray-700 mt-3 leading-relaxed">{a}</p>
+    </details>
   );
 }

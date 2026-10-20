@@ -1,65 +1,57 @@
-'use client';
+import Link from "next/link";
 
-import Link from 'next/link';
-
-export function Footer() {
+export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container-wide">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">Steel Flange</h3>
-            <p className="text-gray-300">
-              Informational resource for quality steel flanges and industrial applications.
-            </p>
+    <footer className="bg-[#1B1F23] text-gray-300">
+      <div className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+        <div>
+          <div className="text-white font-display text-xl mb-3">
+            STEEL<span className="text-[#475569]">FLANGE</span>
           </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-300 hover:text-white transition">Home</Link></li>
-              <li><Link href="/about" className="text-gray-300 hover:text-white transition">About</Link></li>
-              <li><Link href="/services" className="text-gray-300 hover:text-white transition">Services</Link></li>
-              <li><Link href="/blog" className="text-gray-300 hover:text-white transition">Blog</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-4">Related Sites</h4>
-            <ul className="space-y-2">
-<li><a href="https://flangesdimensions.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition">Flange Dimensions</a></li>
-<li><a href="https://aluminumflanges.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition">Aluminum Flanges</a></li>
-<li><a href="https://carbonsteelpipeflanges.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition">Carbon Steel Pipe Flanges</a></li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-4">Contact</h4>
-            <p className="text-gray-300 mb-2">
-              Phone: <a href="tel:281-484-8325" className="hover:text-white transition">281-484-8325</a>
-            </p>
-            <p className="text-gray-300 mb-2">
-              Email: <a href="mailto:sales@texasflange.com" className="hover:text-white transition">sales@texasflange.com</a>
-            </p>
-            <p className="text-gray-300">
-              Website: <a href="https://texasflange.com?ref=steelflange" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">texasflange.com</a>
-            </p>
-            <p className="text-gray-300 mt-2 text-sm">Mon–Fri, 8 AM – 5 PM CST</p>
-          </div>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            Steel pipe flanges in every form. Forged, plate-cut, custom. A105 carbon through F91 chrome-moly. Sizes from 1/2 inch through 203 inch.
+          </p>
         </div>
 
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
+        <div>
+          <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wide">Products</h4>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/products/flanges" className="text-gray-300 hover:text-[#475569]">Flanges</Link></li>
+            <li><Link href="/products/fittings" className="text-gray-300 hover:text-[#475569]">Pipe Fittings</Link></li>
+            <li><Link href="/products/custom-machining" className="text-gray-300 hover:text-[#475569]">Custom Machining</Link></li>
+            <li><Link href="/materials" className="text-gray-300 hover:text-[#475569]">Materials</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wide">Resources</h4>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/resources/flange-dimensions" className="text-gray-300 hover:text-[#475569]">Flange Dimensions</Link></li>
+            <li><Link href="/resources/cad-drawings" className="text-gray-300 hover:text-[#475569]">CAD Drawings</Link></li>
+            <li><Link href="/tools" className="text-gray-300 hover:text-[#475569]">Tools & Calculators</Link></li>
+            <li><Link href="/blog" className="text-gray-300 hover:text-[#475569]">Blog</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wide">Contact</h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>PO Box 2889, Pearland, TX 77588</li>
+            <li><a href="tel:+12814848325" className="text-gray-300 hover:text-[#475569]">(281) 484-8325</a></li>
+            <li><a href="mailto:sales@texasflange.com" className="text-gray-300 hover:text-[#475569]">sales@texasflange.com</a></li>
+            <li>Mon - Fri: 8am - 5pm CST</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-gray-700">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
           <p>&copy; 2026 Steel Flange. All rights reserved.</p>
-          <p className="mt-1">
-            A resource by{" "}
-            <a
-              href="https://texasflange.com?ref=steelflange"
-              className="text-white hover:underline"
-            >
-              Texas Flange
-            </a>
-          </p>
+          <div className="flex gap-4 mt-2 md:mt-0">
+            <Link href="/privacy-policy" className="text-gray-400 hover:text-[#475569]">Privacy Policy</Link>
+            <Link href="/about" className="text-gray-400 hover:text-[#475569]">About</Link>
+            <Link href="/contact" className="text-gray-400 hover:text-[#475569]">Contact</Link>
+          </div>
         </div>
       </div>
     </footer>

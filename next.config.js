@@ -1,24 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "images.unsplash.com" }
+    ]
+  },
+  // Keep the vercel.app preview host out of search results (SEO-AI-097).
+  async headers() {
     return [
       {
-        source: "/blog/understanding-professional-steel-design-and-specifications",
-        destination: "/understanding-steel-flange-basics-and-applications",
-        permanent: true,
-      },
-      {
-        source: "/blog/industrial-applications-for-professional-steel",
-        destination: "/understanding-steel-flange-basics-and-applications",
-        permanent: true,
-      },
-      {
-        source: "/blog/standards-and-quality-assurance-in-professional-steel",
-        destination: "/understanding-steel-flange-basics-and-applications",
-        permanent: true,
+        source: "/:path*",
+        has: [{ type: "host", value: ".*\\.vercel\\.app" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
       },
     ];
   },
 };
-
 module.exports = nextConfig;

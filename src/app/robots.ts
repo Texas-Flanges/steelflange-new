@@ -1,12 +1,7 @@
-import { MetadataRoute } from 'next';
-
+import { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/api/', '/admin/'],
-    },
-    sitemap: 'https://steelflange.com/sitemap.xml',
+    rules: { userAgent: "*", allow: "/" },
+    sitemap: "https://steelflange-new.vercel.app/sitemap.xml"
   };
 }

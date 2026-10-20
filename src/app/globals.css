@@ -2,40 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary-color: #37474f;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  @apply bg-white text-gray-900;
-}
-
-a {
-  @apply text-blue-600 hover:text-blue-800 underline;
+html, body {
+  background-color: #F8F6F0;
+  color: #1B1F23;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-bold text-gray-900;
+  font-family: 'Playfair Display', Georgia, serif;
 }
 
-.btn-primary {
-  @apply px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition;
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.container-wide {
-  @apply max-w-6xl mx-auto px-4;
-}
-/* Mobile responsiveness breakpoints */
-@media (max-width: 640px) {
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.375rem; }
-  h3 { font-size: 1.125rem; }
-}
-
-@media (max-width: 767px) {
-  .hidden-mobile { display: none !important; }
+[class*="bg-[#1B1F23]"] h1, [class*="bg-[#1B1F23]"] h2, [class*="bg-[#1B1F23]"] h3,
+[class*="bg-[#1B1F23]"] h4, [class*="bg-[#1B1F23]"] h5, [class*="bg-[#1B1F23]"] h6 {
+  color: white !important;
 }
