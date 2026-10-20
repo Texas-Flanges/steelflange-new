@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Understanding Steel Flange: Basics and Applications | Steel Flange",
+  title: { absolute: "Understanding Steel Flange: Basics and Applications | Steel Flange" },
   description:
     "Dive into the essentials of the steel flange, from types to materials, with clear, easy-to-follow explanations for beginners.",
   keywords:
