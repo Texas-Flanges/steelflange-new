@@ -171,12 +171,12 @@ export default function HomePage() {
             Spec sheets are fine. Understanding why the spec matters is better. These guides help your team make faster, more confident decisions.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <TechCard title="Flange Types Guide" desc="Weld neck vs slip-on vs blind vs plate. Application criteria for each." href="https://www.texasflange.com/blog/the-complete-guide-to-flanges/?ref=steelflange-new" />
-            <TechCard title="Pressure-Temperature Ratings" desc="ASME B16.5 P-T tables. How class translates to PSI at temperature." href="https://www.texasflange.com/blog/use-of-asme-b16-5-standards-for-flange-pressure-ratings/?ref=steelflange-new" />
-            <TechCard title="Bolt Torque Reference" desc="Recommended torque values for B7 studs by size and lubrication." href="https://www.texasflange.com/blog/bolt-dimensions-explained-a-complete-guide-to-measuring-diameter-threads-and-length/?ref=steelflange-new" />
-            <TechCard title="Material Grade Guide" desc="A105 vs A694 vs F11 vs F22 vs F91. Which grade for which service." href="https://www.texasflange.com/blog/do-you-offer-different-material-grades-for-a-variety-of-industrial-flanges/?ref=steelflange-new" />
-            <TechCard title="Corrosion Prevention" desc="Coatings, galvanizing, material selection for corrosive environments." href="https://www.texasflange.com/blog/flange-maintenance-101-prevent-rust-corrosion-effectively/?ref=steelflange-new" />
-            <TechCard title="Flange Dimension Tables" desc="ASME B16.5 dimensional data. OD, bolt circle, bolt holes, thickness by class." href="https://www.texasflange.com/flange-drawings-models2/blind/?ref=steelflange-new" />
+            <TechCard title="Flange Types Guide" desc="Weld neck vs slip-on vs blind vs plate. Application criteria for each." href="https://www.texasflange.com/blog/the-complete-guide-to-flanges/?ref=steelflange" />
+            <TechCard title="Pressure-Temperature Ratings" desc="ASME B16.5 P-T tables. How class translates to PSI at temperature." href="https://www.texasflange.com/blog/use-of-asme-b16-5-standards-for-flange-pressure-ratings/?ref=steelflange" />
+            <TechCard title="Bolt Torque Reference" desc="Recommended torque values for B7 studs by size and lubrication." href="https://www.texasflange.com/blog/bolt-dimensions-explained-a-complete-guide-to-measuring-diameter-threads-and-length/?ref=steelflange" />
+            <TechCard title="Material Grade Guide" desc="A105 vs A694 vs F11 vs F22 vs F91. Which grade for which service." href="https://www.texasflange.com/blog/do-you-offer-different-material-grades-for-a-variety-of-industrial-flanges/?ref=steelflange" />
+            <TechCard title="Corrosion Prevention" desc="Coatings, galvanizing, material selection for corrosive environments." href="https://www.texasflange.com/blog/flange-maintenance-101-prevent-rust-corrosion-effectively/?ref=steelflange" />
+            <TechCard title="Flange Dimension Tables" desc="ASME B16.5 dimensional data. OD, bolt circle, bolt holes, thickness by class." href="https://www.texasflange.com/flange-drawings-models2/blind/?ref=steelflange" />
           </div>
         </div>
       </section>

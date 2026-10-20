@@ -102,7 +102,7 @@ export default function AsmeFlangesPage() {
           <p className="text-gray-700 leading-relaxed max-w-3xl">
             See the{" "}
             <a
-              href="https://www.texasflange.com/blog/the-complete-guide-to-flanges/?ref=steelflange-new"
+              href="https://www.texasflange.com/blog/the-complete-guide-to-flanges/?ref=steelflange"
               className="text-[#475569] underline"
               target="_blank"
               rel="noopener"

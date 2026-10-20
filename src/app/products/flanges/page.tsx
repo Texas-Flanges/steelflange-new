@@ -377,7 +377,7 @@ export default function FlangesPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="https://www.texasflange.com/blog/the-complete-guide-to-flanges/?ref=steelflange-new"
+                href="https://www.texasflange.com/blog/the-complete-guide-to-flanges/?ref=steelflange"
                 className="text-[#475569] underline"
                 target="_blank"
                 rel="noopener"

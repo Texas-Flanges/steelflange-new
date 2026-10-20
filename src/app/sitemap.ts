@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-const BASE = "https://steelflange-new.vercel.app";
+const BASE = "https://steelflange.com";
 const industries = ["oil-gas","petrochemical","power-generation","waterworks","chemical-processing","mining","pulp-paper","food-beverage","agriculture","hvac","marine","data-centers"];
 const blogSlugs = ["forged-vs-plate-flanges-when-each-makes-sense","a105-vs-a694-high-yield-carbon-the-real-difference","custom-large-diameter-flanges-what-to-spec-beyond-the-catalog"];
 export default function sitemap(): MetadataRoute.Sitemap {

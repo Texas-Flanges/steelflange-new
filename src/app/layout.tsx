@@ -12,14 +12,15 @@ export const metadata: Metadata = {
     "The full steel flange line. A105 carbon through F91 chrome-moly. Forged or plate-cut. Standard sizes through 203 inch custom diameters. ASME, ANSI, AWWA, API standards.",
   keywords:
     "steel flanges, carbon steel flanges, A105 flanges, A694 flanges, F91 chrome-moly, plate flanges, AWWA C207, slip-on flanges, weld neck flanges, blind flanges, high yield carbon, MSS SP-44, forged flanges, large diameter flanges",
-  metadataBase: new URL("https://steelflange-new.vercel.app"),
+  metadataBase: new URL("https://steelflange.com"),
+  alternates: { canonical: "./" },
   openGraph: {
     type: "website",
     siteName: "Steel Flange",
     title: "Steel Flange | Forged, Plate, and Custom",
     description:
       "A105 through F91. Forged and plate-cut. Standard through 203 inch custom. The full steel flange line.",
-    url: "https://steelflange-new.vercel.app"
+    url: "https://steelflange.com"
   },
   robots: { index: true, follow: true }
 };
@@ -42,8 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Steel Flange",
-              url: "https://steelflange-new.vercel.app",
-              logo: "https://steelflange-new.vercel.app/logo.png",
+              url: "https://steelflange.com",
+              logo: "https://steelflange.com/logo.png",
               description:
                 "Steel pipe flange resource and supply. Forged, plate-cut, and custom. Carbon, alloy, and stainless. ASME, ANSI, AWWA, API.",
               telephone: "+1-281-484-8325",
