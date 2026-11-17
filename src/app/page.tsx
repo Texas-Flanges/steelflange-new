@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RelatedResources from "@/components/RelatedResources";
 
 export default function HomePage() {
   return (
@@ -228,6 +229,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <RelatedResources />
     </>
   );
 }

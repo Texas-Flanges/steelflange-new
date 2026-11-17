@@ -1,0 +1,31 @@
+{
+  "site": "steelflange.com",
+  "heading": "Related resources",
+  "links": [
+    {
+      "url": "https://texasflange.com/?ref=steelflange",
+      "label": "Texas Flange & Fitting Supply",
+      "note": "Stock, pricing and quotes on steel flanges"
+    },
+    {
+      "url": "https://plateflanges.com/",
+      "label": "Plate flange guide (PlateFlanges.com)",
+      "note": "Flanges cut from steel plate for low-pressure service"
+    },
+    {
+      "url": "https://www.customflanges.com/",
+      "label": "Custom steel flanges (CustomFlanges.com)",
+      "note": "Non-standard steel flanges made to drawing"
+    },
+    {
+      "url": "https://flangessteel.com/",
+      "label": "Steel flange grades explained (FlangesSteel.com)",
+      "note": "Steel grades, and forged versus cast flanges"
+    },
+    {
+      "url": "https://largediameterflanges.com/",
+      "label": "Large diameter flange reference (LargeDiameterFlanges.com)",
+      "note": "Large forged and plate rings beyond standard sizes"
+    }
+  ]
+}
